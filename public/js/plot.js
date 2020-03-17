@@ -36,7 +36,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     titlefont: {
       family: 'Arial, sans-serif',
       size: 18,
-      color: 'lightgrey'
+      color: 'black'
     },
 
     showgrid: false,
@@ -45,12 +45,12 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     tickcolor: '#000'
   },
   ////////
-  yaxis: {title:"        No of Cases",
+  yaxis2: {title:" \r\n\r\n\r\n\r\n\r\n\r\n No of Cases",
 
   titlefont: {
         family: 'Arial, sans-serif',
         size: 18,
-        color: 'lightgrey'
+        color: 'black'
       },
       tickangle: 45,
   domain: [0, 0.45],
@@ -59,8 +59,8 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     tickcolor: '#000'
   },
   /////////////
-  yaxis2: {
-  domain: [.55, 1],
+  yaxis: {
+  domain: [2.55, 1],
   tickangle: 45,
     autotick: true,
     ticks: 'outside',
