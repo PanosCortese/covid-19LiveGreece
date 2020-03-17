@@ -101,8 +101,9 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     bgcolor: '#E2E2E2',
     bordercolor: '#FFFFFF',
     borderwidth: 2
-  }}
+  }
   };
+
   var data = [recovered, deaths, total_cases];
   //var dataTotal = [total_cases];
   Plotly.newPlot('plot-death-rec', data, layout);
