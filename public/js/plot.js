@@ -74,7 +74,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     tickcolor: '#000'
   },
   plot_bgcolor:"#A9A9A9",
-  paper_bgcolor:"#FFF3",
+  paper_bgcolor:"#E0E0E0",
   ///// annotations
   annotations: [{
     textangle :-90,
@@ -99,7 +99,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
       size: 18,
       color: '#000'
     },
-    bgcolor: '#E0E0E0',
+    bgcolor: '#E2E2E2',
     bordercolor: '#FFFFFF',
     borderwidth: 2
   }
