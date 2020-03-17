@@ -26,7 +26,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     x: dates,
     y: deaths,
     type: 'scatter',
-    line:{color:"#820c0c", width:3},
+    line:{color:"#d42828", width:3},
     name:'deaths'
   };
 
