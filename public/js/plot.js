@@ -45,7 +45,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     tickcolor: '#000'
   },
   ////////
-  yaxis2: {title:" \r\n\r\n\r\n\r\n\r\n\r\n No of Cases",
+  yaxis2: {title:" <br><br><br> No of Cases",
 
   titlefont: {
         family: 'Arial, sans-serif',
