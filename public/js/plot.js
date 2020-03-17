@@ -36,11 +36,13 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     tickcolor: '#000'
   },
   yaxis: {title:"No of Cases",
+  domain: [0, 0.45],
     autotick: true,
     ticks: 'outside',
     tickcolor: '#000'
   },
   yaxis2: {title:"No of Cases",
+  domain: [.55, 1],
     autotick: true,
     ticks: 'outside',
     tickcolor: '#000'
