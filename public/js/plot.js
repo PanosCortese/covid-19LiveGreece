@@ -15,6 +15,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   var recovered = {
     x: dates,
     y: recovered,
+    yaxis: 'y2',
     type: 'scatter',
     name: "recovered"
   };
