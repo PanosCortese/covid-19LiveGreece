@@ -92,7 +92,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     showarrow: false
   }],
   ////////// legend
-  {
+  legend:{
     font: {
       family: 'sans-serif',
       size: 18,
