@@ -84,7 +84,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   },
     xref: 'paper',
     yref: 'paper',
-    x: -.2,
+    x: -.02,
     xanchor: 'right',
     y: 0.5,
     yanchor: 'bottom',
