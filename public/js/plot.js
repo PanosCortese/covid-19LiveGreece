@@ -22,6 +22,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   var deaths = {
     x: dates,
     y: deaths,
+    yaxis: 'y2',
     type: 'scatter',
     name:'deaths'
   };
@@ -34,6 +35,11 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     tickcolor: '#000'
   },
   yaxis: {title:"No of Cases",
+    autotick: true,
+    ticks: 'outside',
+    tickcolor: '#000'
+  },
+  yaxis2: {title:"No of Cases",
     autotick: true,
     ticks: 'outside',
     tickcolor: '#000'
