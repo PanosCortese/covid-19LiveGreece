@@ -42,7 +42,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   },
   //////// YAXIS
   yaxis: {
-
+    side:"right",
   titlefont: {
         family: 'Arial, sans-serif',
         size: 28,
@@ -63,6 +63,8 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   yaxis2: {
   domain: [.55, 1],
   tickangle: 45,
+  side:"right",
+
   tickfont: {
       family: 'Old Standard TT, serif',
       size: 20,
