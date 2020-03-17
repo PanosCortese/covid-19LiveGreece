@@ -32,7 +32,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
 
   layout= {
     title: {
-    text:"Coronavirus cases in Greece over time",
+    text:"Coronavirus cases in UK over time",
     font: {
       family: 'Courier New, monospace',
       size: 28
