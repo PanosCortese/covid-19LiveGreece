@@ -45,7 +45,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     tickcolor: '#000'
   },
   ////////
-  yaxis2: {title:" <br><br><br> No of Cases",
+  yaxis: {title:" <br><br><br> No of Cases",
 
   titlefont: {
         family: 'Arial, sans-serif',
@@ -53,14 +53,14 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
         color: 'black'
       },
       tickangle: 45,
-  domain: [0, 0.45],
+  domain: [.55, 1],
     autotick: true,
     ticks: 'outside',
     tickcolor: '#000'
   },
   /////////////
-  yaxis: {
-  domain: [2.55, 1],
+  yaxis2: {
+  domain: [0, .45],
   tickangle: 45,
     autotick: true,
     ticks: 'outside',
