@@ -69,10 +69,10 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   paper_bgcolor:"#FFF3",
   ///// annotations
   annotations: [{
-    textfont: {
-    family: "sans serif",
+    font: {
+    family: "Arial, sans serif",
     size: 18,
-    color: "#ff7f0e"
+    color: "black"
   },
     xref: 'paper',
     yref: 'paper',
