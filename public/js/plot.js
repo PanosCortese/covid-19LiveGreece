@@ -48,10 +48,10 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
         plot_bgcolor:"#A9A9A9",
         paper_bgcolor:"#FFF3"
   };
-  var data = [recovered, deaths];
-  var dataTotal = [total_cases];
+  var data = [total_cases, recovered, deaths];
+  //var dataTotal = [total_cases];
   Plotly.newPlot('plot-death-rec', data, layout);
-  Plotly.newPlot('plot-total', dataTotal, layout);
+  //Plotly.newPlot('plot-total', dataTotal, layout);
 
 
 });
