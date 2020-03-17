@@ -72,14 +72,14 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     font: {
     family: "Arial, sans serif",
     size: 18,
-    color: "black"
+    color: "black",
+    angle:90
   },
     xref: 'paper',
     yref: 'paper',
     x: 0,
     xanchor: 'right',
     y: 1,
-    angle:90,
     yanchor: 'bottom',
     text: 'X axis label',
     showarrow: false
