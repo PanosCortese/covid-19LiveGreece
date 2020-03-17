@@ -38,7 +38,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     ///////////// XAXIS
     xaxis: {
        type: 'date',
-       tickformat: "%y/%m/%d",
+       tickformat: "%H %d-%b ",
 
     tickfont: {
         family: 'Old Standard TT, serif',
@@ -90,12 +90,12 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     textangle :-90,
     font: {
     family: "Arial, sans serif",
-    size: 23,
+    size: 21,
     color: "black",
   },
     xref: 'paper',
     yref: 'paper',
-    x: -.035,
+    x: -.045,
     xanchor: 'right',
     y: 0.3,
     yanchor: 'bottom',
