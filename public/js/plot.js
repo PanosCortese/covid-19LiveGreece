@@ -80,7 +80,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     ticks: 'outside',
     tickcolor: '#000'
   },
-  plot_bgcolor:"#A9A9A9",
+  plot_bgcolor:"#f5f5f5",
   paper_bgcolor:"#E0E0E0",
   ///// annotations
   annotations: [{
