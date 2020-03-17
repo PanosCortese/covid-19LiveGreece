@@ -90,7 +90,18 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     yanchor: 'bottom',
     text: 'X axis label',
     showarrow: false
-  }]
+  }],
+  ////////// legend
+  {
+    font: {
+      family: 'sans-serif',
+      size: 18,
+      color: '#000'
+    },
+    bgcolor: '#E2E2E2',
+    bordercolor: '#FFFFFF',
+    borderwidth: 2
+  }}
   };
   var data = [recovered, deaths, total_cases];
   //var dataTotal = [total_cases];
