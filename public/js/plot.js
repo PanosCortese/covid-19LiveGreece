@@ -44,7 +44,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     tickcolor: '#000'
   },
   ////////
-  yaxis: {title:"No of Cases",
+  yaxis: {
 
   titlefont: {
         family: 'Arial, sans-serif',
@@ -67,7 +67,13 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   },
   plot_bgcolor:"#A9A9A9",
   paper_bgcolor:"#FFF3",
+  ///// annotations
   annotations: [{
+    textfont: {
+    family: "sans serif",
+    size: 18,
+    color: "#ff7f0e"
+  },
     xref: 'paper',
     yref: 'paper',
     x: 0,
