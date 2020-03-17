@@ -8,6 +8,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   var total_cases = {
     x: dates,
     y: total_cases,
+    yaxis: 'y2',
     type: 'scatter',
     name: "total_cases"
   };
@@ -15,7 +16,6 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   var recovered = {
     x: dates,
     y: recovered,
-    yaxis: 'y2',
     type: 'scatter',
     name: "recovered"
   };
@@ -23,7 +23,6 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   var deaths = {
     x: dates,
     y: deaths,
-    yaxis: 'y2',
     type: 'scatter',
     name:'deaths'
   };
@@ -45,7 +44,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     tickcolor: '#000'
   },
   ////////
-  yaxis: {title:" <br><br><br> No of Cases",
+  yaxis: {title:"No of Cases",
 
   titlefont: {
         family: 'Arial, sans-serif',
@@ -53,21 +52,32 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
         color: 'black'
       },
       tickangle: 45,
-  domain: [.55, 1],
+  domain: [0, .45],
     autotick: true,
     ticks: 'outside',
     tickcolor: '#000'
   },
   /////////////
   yaxis2: {
-  domain: [0, .45],
+  domain: [.55, 1],
   tickangle: 45,
     autotick: true,
     ticks: 'outside',
     tickcolor: '#000'
   },
-        plot_bgcolor:"#A9A9A9",
-        paper_bgcolor:"#FFF3"
+  plot_bgcolor:"#A9A9A9",
+  paper_bgcolor:"#FFF3",
+  annotations: [{
+    xref: 'paper',
+    yref: 'paper',
+    x: 0,
+    xanchor: 'right',
+    y: 1,
+    angle:90,
+    yanchor: 'bottom',
+    text: 'X axis label',
+    showarrow: false
+  }]
   };
   var data = [recovered, deaths, total_cases];
   //var dataTotal = [total_cases];
