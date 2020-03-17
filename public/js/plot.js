@@ -37,6 +37,9 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   },
     ///////////// XAXIS
     xaxis: {
+       type: 'date',
+       tickformat: "%y/%m/%d",
+
     tickfont: {
         family: 'Old Standard TT, serif',
         size: 20,
