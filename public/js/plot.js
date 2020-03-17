@@ -28,6 +28,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   };
 
   layout= {
+    title:"Coronavirus cases in Greece over time",
     ///////////// XAXIS
     xaxis: {
     tickfont: {
