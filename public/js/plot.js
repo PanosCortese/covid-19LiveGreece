@@ -10,6 +10,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     y: total_cases,
     yaxis: 'y2',
     type: 'scatter',
+    line:{color:"#996100", width:3},
     name: "total_cases"
   };
 
@@ -17,6 +18,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     x: dates,
     y: recovered,
     type: 'scatter',
+    line:{color:"#0d853d", width:3},
     name: "recovered"
   };
 
@@ -24,6 +26,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     x: dates,
     y: deaths,
     type: 'scatter',
+    line:{color:"#820c0c", width:3},
     name:'deaths'
   };
 
