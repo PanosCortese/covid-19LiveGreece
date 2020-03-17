@@ -1,7 +1,7 @@
 {
-  "name": "covid-19greecelive",
+  "name": "covid-19UKlive",
   "version": "1.0.0",
-  "description": "Live updates for greece's covid",
+  "description": "Live updates for United Kingdom's Covid-19 cases",
   "main": "index.js",
   "engines": {
     "node": "12.15.0",
@@ -19,9 +19,9 @@
   "author": "Nikos Theodoropoulos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NikTheGeek1/covid-19GreeceLive/issues"
+    "url": "https://https://github.com/PanosCortese/covid-19LiveGreece/issues"
   },
-  "homepage": "https://github.com/NikTheGeek1/covid-19GreeceLive#readme",
+  "homepage": "https://github.com/PanosCortese/covid-19LiveGreece#readme",
   "dependencies": {
     "async": "^3.2.0",
     "axios": "^0.19.2",
