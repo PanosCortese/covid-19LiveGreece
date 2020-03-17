@@ -27,17 +27,20 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     name:'deaths'
   };
 
-
   layout= {
     /////////////
     xaxis: {title:'Date',
 
     titlefont: {
       family: 'Arial, sans-serif',
-      size: 18,
+      size: 28,
       color: 'black'
     },
-
+    tickfont: {
+        family: 'Old Standard TT, serif',
+        size: 20,
+        color: 'black'
+      },
     showgrid: false,
     autotick: true,
     ticks: 'outside',
@@ -48,11 +51,16 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
 
   titlefont: {
         family: 'Arial, sans-serif',
-        size: 18,
+        size: 28,
         color: 'black'
       },
       tickangle: 45,
   domain: [0, .45],
+  tickfont: {
+      family: 'Old Standard TT, serif',
+      size: 20,
+      color: 'black'
+    },
     autotick: true,
     ticks: 'outside',
     tickcolor: '#000'
@@ -63,7 +71,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   tickangle: 45,
   tickfont: {
       family: 'Old Standard TT, serif',
-      size: 14,
+      size: 20,
       color: 'black'
     },
     autotick: true,
@@ -74,17 +82,17 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   paper_bgcolor:"#FFF3",
   ///// annotations
   annotations: [{
-    textangle :90,
+    textangle :-90,
     font: {
     family: "Arial, sans serif",
-    size: 18,
+    size: 28,
     color: "black",
   },
     xref: 'paper',
     yref: 'paper',
     x: 0,
     xanchor: 'right',
-    y: 1,
+    y: -1,
     yanchor: 'bottom',
     text: 'X axis label',
     showarrow: false
