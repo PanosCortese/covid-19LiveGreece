@@ -38,6 +38,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
       },
     showgrid: false,
     autotick: true,
+    zeroline: false,
     ticks: 'outside',
     tickcolor: '#000'
   },
