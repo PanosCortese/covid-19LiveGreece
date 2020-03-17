@@ -88,7 +88,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     xanchor: 'right',
     y: 0.25,
     yanchor: 'bottom',
-    text: 'X axis label',
+    text: 'Num of cases',
     showarrow: false
   }],
   ////////// legend
