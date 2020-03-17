@@ -87,14 +87,14 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     textangle :-90,
     font: {
     family: "Arial, sans serif",
-    size: 28,
+    size: 25,
     color: "black",
   },
     xref: 'paper',
     yref: 'paper',
     x: -.03,
     xanchor: 'right',
-    y: 0.25,
+    y: 0.3,
     yanchor: 'bottom',
     text: 'Num of cases',
     showarrow: false
