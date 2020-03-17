@@ -99,7 +99,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
       size: 18,
       color: '#000'
     },
-    bgcolor: '#E2E2E2',
+    bgcolor: '#E0E0E0',
     bordercolor: '#FFFFFF',
     borderwidth: 2
   }
