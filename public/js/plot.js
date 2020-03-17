@@ -30,19 +30,38 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
 
 
   layout= {
+    /////////////
     xaxis: {title:'Date',
+
+    titlefont: {
+      family: 'Arial, sans-serif',
+      size: 18,
+      color: 'lightgrey'
+    },
+
+    showgrid: false,
     autotick: true,
     ticks: 'outside',
     tickcolor: '#000'
   },
-  yaxis: {title:"No of Cases",
+  ////////
+  yaxis: {title:"        No of Cases",
+
+  titlefont: {
+        family: 'Arial, sans-serif',
+        size: 18,
+        color: 'lightgrey'
+      },
+      tickangle: 45,
   domain: [0, 0.45],
     autotick: true,
     ticks: 'outside',
     tickcolor: '#000'
   },
-  yaxis2: {title:"No of Cases",
+  /////////////
+  yaxis2: {
   domain: [.55, 1],
+  tickangle: 45,
     autotick: true,
     ticks: 'outside',
     tickcolor: '#000'
@@ -50,7 +69,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
         plot_bgcolor:"#A9A9A9",
         paper_bgcolor:"#FFF3"
   };
-  var data = [total_cases, recovered, deaths];
+  var data = [recovered, deaths, total_cases];
   //var dataTotal = [total_cases];
   Plotly.newPlot('plot-death-rec', data, layout);
   //Plotly.newPlot('plot-total', dataTotal, layout);
