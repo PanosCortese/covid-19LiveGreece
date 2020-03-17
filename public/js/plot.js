@@ -84,9 +84,9 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   },
     xref: 'paper',
     yref: 'paper',
-    x: 0,
+    x: -.2,
     xanchor: 'right',
-    y: 0,
+    y: 0.5,
     yanchor: 'bottom',
     text: 'X axis label',
     showarrow: false
