@@ -28,14 +28,8 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   };
 
   layout= {
-    /////////////
-    xaxis: {title:'Date',
-
-    titlefont: {
-      family: 'Arial, sans-serif',
-      size: 28,
-      color: 'black'
-    },
+    ///////////// XAXIS
+    xaxis: {
     tickfont: {
         family: 'Old Standard TT, serif',
         size: 20,
@@ -46,7 +40,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     ticks: 'outside',
     tickcolor: '#000'
   },
-  ////////
+  //////// YAXIS
   yaxis: {
 
   titlefont: {
@@ -65,7 +59,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     ticks: 'outside',
     tickcolor: '#000'
   },
-  /////////////
+  ///////////// YAXIS2
   yaxis2: {
   domain: [.55, 1],
   tickangle: 45,
@@ -92,7 +86,7 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
     yref: 'paper',
     x: 0,
     xanchor: 'right',
-    y: -1,
+    y: 0,
     yanchor: 'bottom',
     text: 'X axis label',
     showarrow: false
