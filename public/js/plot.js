@@ -61,6 +61,11 @@ var deaths = JSON.parse(document.getElementById("deaths").value);
   yaxis2: {
   domain: [.55, 1],
   tickangle: 45,
+  tickfont: {
+      family: 'Old Standard TT, serif',
+      size: 14,
+      color: 'black'
+    },
     autotick: true,
     ticks: 'outside',
     tickcolor: '#000'
