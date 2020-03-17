@@ -16,7 +16,7 @@ const MongoClient = require('mongodb').MongoClient;
 container.resolve(function(index, scrap_fun){ // brings the modules from the container. we run everyting in here
   // adding mongoose connection to the database
   mongoose.Promise = global.Promise;
-  mongoose.connect(process.env.MONGO_URI, {useNewUrlParser:true, useUnifiedTopology: true })
+  mongoose.connect("mongodb+srv://Cortese:pk2312@cluster0-vcdcz.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser:true, useUnifiedTopology: true })
 
   const db = mongoose.connection;
 
@@ -64,7 +64,7 @@ container.resolve(function(index, scrap_fun){ // brings the modules from the con
     app.use(bodyParser.urlencoded({extended: true}));
 
     app.use(session({ // allows to save sessions
-      secret: process.env.SECRET_KEY,
+      secret: "thisisasecretkey",//process.env.SECRET_KEY,
       resave: true,
       saveUninitialized: true,
       saveInitialized: true,
