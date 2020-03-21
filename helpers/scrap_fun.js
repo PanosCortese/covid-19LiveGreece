@@ -16,14 +16,13 @@ const Stamp = require('../models/mongoosSchema'); // fetching the userSchema in 
         const html = response.data;
         const $ = cheerio.load(html);
 
-        $('td').each(function(i,e) {
-          let str = $(e).text();
-          if (str === 'UK'){
-            indices = [i, i+1, i+3, i+5];
-            return
-          }
-        });
-
+        $('#main_table_countries_today td').each(function(i,e) {
+                  let str = $(e).text();
+                  if (str === ' UK ' || str === 'UK' || str === ' UK' || str === 'UK '){
+                    indices = [i, i+1, i+3, i+5];
+                    return
+                  }
+                });
       this.check_duplicates( $('.content-inner div').eq(1).text(), $('.content-inner div').eq(1).text(),   $('td').eq(indices[1]).text(),    $('td').eq(indices[2]).text(),      $('td').eq(indices[3]).text());
 
 
